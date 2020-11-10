@@ -1,0 +1,40 @@
+{
+  "HOME": {
+    "HOME_LINK":"בית",
+    "ABOUTME_LINK":"קצת עלי",
+    "DESCRIPTION_LINK":"פירוט השירותים",
+    
+    "TITLE": "!ברוכים הבאים לאסף פתרונות",
+    "SUBTITLE": "פתרונות מותאמים אישית לעסק שלך",
+    "LI_1": "כתיבת סקריפטים",
+    "LI_2": "הדרכה אישית בפרוייקט",
+    "LI_3": "תמיכה מתמשכת בתחזוקה",
+    "LI_4": "גרפים בהתאמה אישית",
+    "LI_5": "משחקי חשיבה לילדים",
+    "CONTACT": "צרו קשר:",
+    "PHONE": "טלפון:",
+    "EMAIL": "אי-מייל:",
+
+
+    "TITLE_ABOUT":"קצת עלי",
+    "LI_1_ABOUT":"הסמכה - מהנדס מחשבים - Bsc",
+    "LI_2_ABOUT":"גיל - 29",
+    "LI_3_ABOUT":"ניסיון מוכח בחברת אלביט: WPF C# , Matlab, Python , angular",
+
+    "SERVICE_TITLE":"המוצר",
+    "DESCRIPTION_TITLE":"תיאור קצר",
+    
+    "SERVICE_1":"WPF C# Project",
+    "SERVICE_2":"Matlab",
+    "SERVICE_3":"Angular",
+    "SERVICE_4":"Python Scripts",
+    "SERVICE_5":"Games for children",
+
+    "DESCRIPTION_1":"אפליקציית שולחן עבודה בשביל העסק",
+    "DESCRIPTION_2":"רק למחזיקי רישיון (כולל חישוביים מתמטיים)",
+    "DESCRIPTION_3":"הקמת אתר",
+    "DESCRIPTION_4":"סקריפטים לכל מטרה",
+    "DESCRIPTION_5":"משחקי חשיבה"
+
+  }
+}

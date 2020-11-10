@@ -1,0 +1,49 @@
+<header  >
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-info border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="col-0" height="80" width="80" src="assets/logo2.JPG">
+      </a>
+      <select #langselect (change)="translateToLanguage(langselect.value)">
+        <option *ngFor="let lang of translate.getLangs()"  value="{{lang}}" [selected]="lang === translate.selected">{{ lang }}</option>
+      </select>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-warning" [routerLink]="['/']">
+              {{'HOME.HOME_LINK'|translate}}
+            </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-warning" [routerLink]="['/AboutMe']"
+              >{{'HOME.ABOUTME_LINK'|translate}}</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-warning" [routerLink]="['/fetch-data']"
+              >{{'HOME.DESCRIPTION_LINK'|translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

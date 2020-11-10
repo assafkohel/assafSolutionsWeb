@@ -1,0 +1,39 @@
+{
+  "HOME": {
+    "HOME_LINK":"Home",
+    "ABOUTME_LINK":"About Me",
+    "DESCRIPTION_LINK":"Description",
+    
+    "TITLE": "Welcome to Assaf Solutions!",
+    "SUBTITLE": "Customized solutions for your business.",
+    "LI_1": "Scripts writing.",
+    "LI_2": "Project's personal guidance.",
+    "LI_3": "Ongoing maintenance.",
+    "LI_4": "Customized Graphs.",
+    "LI_5": "Mind games for elementary school.",
+    "CONTACT": "Contact me:",
+    "PHONE": "Phone:",
+    "EMAIL": "E-mail:",
+
+    "TITLE_ABOUT":"About me:",
+    "LI_1_ABOUT":"Certification: BSc - Computer Engineer.",
+    "LI_2_ABOUT":"Age: 29.",
+    "LI_3_ABOUT":"Proven experience at 'Elbit Systems' : WPF C# , Matlab, Python , angular development and more...",
+
+    "SERVICE_TITLE":"SERVICE",
+    "DESCRIPTION_TITLE":"DESCRIPTION",
+
+    "SERVICE_1":"WPF C# Project",
+    "SERVICE_2":"Matlab",
+    "SERVICE_3":"Angular",
+    "SERVICE_4":"Python Scripts",
+    "SERVICE_5":"Games for children",
+
+    "DESCRIPTION_1":"A fully desktop application for your buisness.",
+    "DESCRIPTION_2":"Only for Matlab license owners (includes mathematics solutions).",
+    "DESCRIPTION_3":"Web application.",
+    "DESCRIPTION_4":"Scripts for all uses.",
+    "DESCRIPTION_5":"Educational mind games."
+ 
+  }
+}

@@ -1,0 +1,38 @@
+<div  >
+  <h1 id="tableLabel">{{'HOME.DESCRIPTION_LINK'|translate}}</h1>
+
+  <p *ngIf="!tableInfo"><em>Loading...</em></p>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="tableInfo">
+    <thead>
+      <tr>
+        <th>{{ 'HOME.SERVICE_TITLE'|translate }}</th>
+        <th>{{ 'HOME.DESCRIPTION_TITLE'|translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>{{ 'HOME.SERVICE_1'|translate }}</td>
+        <td>{{'HOME.DESCRIPTION_1'|translate  }}</td>
+      </tr>
+      <tr >
+        <td>{{ 'HOME.SERVICE_2'|translate }}</td>
+        <td>{{'HOME.DESCRIPTION_2'|translate  }}</td>
+      </tr>
+      <tr >
+        <td>{{ 'HOME.SERVICE_3'|translate }}</td>
+        <td>{{'HOME.DESCRIPTION_3'|translate  }}</td>
+      </tr>
+      <tr >
+        <td>{{ 'HOME.SERVICE_4'|translate }}</td>
+        <td>{{'HOME.DESCRIPTION_4'|translate  }}</td>
+      </tr>
+      <tr >
+        <td>{{ 'HOME.SERVICE_5'|translate }}</td>
+        <td>{{'HOME.DESCRIPTION_5'|translate  }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <p><img height="150" width="70" src="assets/questionmark.gif" /></p>
+</div>

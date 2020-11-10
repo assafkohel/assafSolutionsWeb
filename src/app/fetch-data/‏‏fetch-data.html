@@ -1,0 +1,22 @@
+<div  >
+  <h1 id="tableLabel">Description</h1>
+
+  <p *ngIf="!tableInfo"><em>Loading...</em></p>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="tableInfo">
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tableInfoSingle of tableInfo">
+        <td>{{ tableInfoSingle.service }}</td>
+        <td>{{ tableInfoSingle.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <p><img height="150" width="70" src="assets/questionmark.gif" /></p>
+</div>
