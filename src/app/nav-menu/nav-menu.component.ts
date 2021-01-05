@@ -5,6 +5,7 @@ import { browser } from 'protractor';
 import { Subscription } from 'rxjs';
 import { BidiModule, Directionality } from '@angular/cdk/bidi';
 import { DOCUMENT } from '@angular/common';
+import {BetweenCompService} from "../between-comp.service"
 
 @Component({
   selector: 'app-nav-menu',
@@ -22,7 +23,8 @@ export class NavMenuComponent implements OnInit {
   constructor(
     private eventEmitterService: EventEmitterService,
     public translate: TranslateService,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private betweenCompService:BetweenCompService
  )
   {
     translate.addLangs(['en', 'he']);
@@ -31,10 +33,16 @@ export class NavMenuComponent implements OnInit {
     translate.use(browserLang.match(/en|he/) ? browserLang : 'he');
   }
 
-
+  isNotPnina :boolean;
   isExpanded: boolean;
 
   ngOnInit() {
+    this.isNotPnina = true;
+    this.betweenCompService.currentMessage.subscribe(message => {
+      if(message == "false"){
+        this.isNotPnina = false;
+      }
+    })
   }
 
   collapse() {

@@ -1,0 +1,51 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+.facebookIcon{
+    cursor: pointer;
+}
+  
+
+.box {
+  margin: 50px auto;
+  background: #5FCF80;
+  width: 100px;
+  height: 100px;
+}
+
+.box:hover {
+  -webkit-transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+}
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+animations: [
+  trigger(fadeInGrow, [
+    transition(‘:enter’, [
+      query(‘:enter’, [
+        style({ opacity: 0 }),
+        stagger(‘50ms’, [
+          animate(‘500ms’, style({ opacity: 1 })
+        ])
+      ])
+    ])
+  ])
+]
